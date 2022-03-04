@@ -1,0 +1,94 @@
+  <!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="assets\fav.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS //////////////////////////////////////////////////////////////////// -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS //////////////////////////////////////////////////////////////////-->
+  <link rel="stylesheet" href="styles.css">
+
+    <title>MJ</title>
+
+
+
+    <script>
+  function animateText(id, text, i) {
+    document.getElementById("dynamic-text").innerHTML = text.substring(0, i);
+    i++;
+    if (i > text.length) i = 0;
+    setTimeout("animateText('" +"dynamic-text" + "','" + text + "'," + i + ")", 100);
+  }
+</script>
+
+
+  </head>
+  
+  <body class="text-center" onload = 'animateText("dynamic-text", "If you enter this world knowing you are loved and you leave this world knowing the same, then everything that happens in between can be dealt with — <b> Michael Jackson</b>", 0);'>
+    <!--java script///////////////////////////////////////////////////////////////////////////////-->
+ <script src="asd.js" charset="utf-8" >
+   
+ </script>
+     <!--java script///////////////////////////////////////////////////////////////////////////////-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Michael Jackson</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="page2.html" >Biography</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="page3.html">Discography</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="page4.html">Awards</a>
+        </li>
+    <li class="nav-item">
+            <a class="nav-link" href="#" onclick="Creators();">About us</a>
+        </li> 
+    <li class="nav-item">
+        </li>
+       <audio id="foobar" src="song/hee.mp3" preload="auto">
+  
+
+
+      </ul>
+ 
+    </div>
+  </div>
+</nav>
+<div class="container py-5 w-75 ">
+<div class="d-flex align-items-center">
+  <div class="flex-shrink-0">
+    <img src="assets\MJ_quote.jpg" alt="Michael Jackson">
+  </div>
+  <div class="flex-grow-1 ms-4">
+
+  
+  </div>
+</div>
+</div>
+<footer class = "bg-dark text-white fixed-bottom bottom-0 end-0 text-center d-none d-md-block">Copyright Ansar & Adil CS2106. All rigths reserved.
+</footer>
+
+<span id = 'dynamic-text'></span>
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+
+  </body>
+</html>
